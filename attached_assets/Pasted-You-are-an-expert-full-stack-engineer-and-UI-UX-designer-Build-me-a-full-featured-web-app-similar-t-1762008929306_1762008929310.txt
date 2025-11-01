@@ -1,0 +1,77 @@
+You are an expert full-stack engineer and UI/UX designer. Build me a full-featured web app similar to ProductHunt — but focused on sharing the latest AI tools, automation apps, and startup resources that help entrepreneurs and creators.
+
+🧱 TECH STACK
+- Backend: Node.js + Express + TypeScript
+- Frontend: React + TailwindCSS (Vite or Next.js optional)
+- Database: PostgreSQL (use Prisma ORM)
+- Authentication: Clerk or Auth.js (email + Google login)
+- Hosting: Render (compatible with Neon DB)
+- Folder Structure: /server, /client, /shared
+
+🧩 CORE FEATURES
+1. **Homepage (Tools Feed)**
+   - Display list of latest tools (title, logo, short description, tags, votes, launch date)
+   - Sorting: Trending | Newest | Most Voted
+
+2. **Tool Details Page**
+   - Tool name, logo, screenshots
+   - Full description
+   - Category tags
+   - Link to visit tool
+   - Upvote button (with count)
+   - Comment section for users
+
+3. **Add New Tool (Submit Page)**
+   - Form fields: title, description, category, tool link, logo upload, pricing type (free/paid)
+   - Authenticated users only
+   - Auto-moderate or store pending submissions
+
+4. **User Authentication**
+   - Users can Sign up / Log in
+   - Manage profiles (name, bio, avatar)
+
+5. **Admin Dashboard**
+   - Manage tool submissions, edit or delete posts, approve pending ones
+
+6. **Search & Filters**
+   - Search bar to find tools by keyword
+   - Filter by category: AI Tools, Automation, Design, Marketing, Productivity, etc.
+
+7. **Responsive UI**
+   - Modern, clean, minimalist — similar to ProductHunt but unique
+   - Navbar with logo + links (Home, Submit Tool, Categories, Login)
+   - Light/Dark mode toggle
+
+8. **Voting System**
+   - Logged-in users can upvote once per tool
+   - Store votes in DB
+   - Display total votes
+
+9. **Commenting System**
+   - Authenticated users can comment
+   - Show username + timestamp
+
+10. **Optional API**
+   - Public REST API for fetching tools data
+
+🎨 DESIGN THEME
+Use a sleek, modern theme with TailwindCSS:
+- Background: Neutral gray or dark
+- Accent: Electric Blue (#3B82F6)
+- Font: Inter or Poppins
+- Card-based layout for tools
+- Add hover effects and smooth transitions
+
+💡 APP NAME:
+“ToolVerse” — Tagline: “Discover AI & Automation Tools That Power Entrepreneurs.”
+
+🧠 GOAL:
+Generate complete folder structure, dependencies, and boilerplate code for backend + frontend, with sample data and full CRUD setup (create, read, update, delete) for tools.
+
+✅ OUTPUT:
+1. Express backend with routes for tools, votes, comments, and users
+2. React frontend with pages (Home, Tool Details, Submit Tool, Login)
+3. Prisma schema for PostgreSQL
+4. Tailwind setup for styling
+5. Ready-to-deploy instructions for Render + Neon DB
+
